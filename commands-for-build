@@ -1,0 +1,11 @@
+How to Build and Run the Docker Image
+----------------------------------------
+
+# Step 1: Build the Docker image
+docker build -t flask-portfolio .
+
+# Step 2: Run the Docker container
+docker run -d -p 5000:5000 flask-portfolio
+
+# Step 3: Test in browser or via curl
+curl http://localhost:5000
