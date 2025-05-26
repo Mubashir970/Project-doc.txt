@@ -1,0 +1,10 @@
+Common Troubleshooting
+-------------------------
+
+- If you get a 500 Internal Server Error:
+  - Ensure templates/index.html is copied inside the container.
+  - Check logs: docker logs <container_id>
+  - Ensure your Dockerfile contains: COPY templates/ templates/
+
+- To debug live:
+  docker exec -it <container_id> bash
